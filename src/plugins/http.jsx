@@ -1,4 +1,4 @@
-const rootUrl = "http://localhost:1000";
+const rootUrl = "http://213.199.51.176:1000";
 
 const http = {
   post: (url, data) => {
