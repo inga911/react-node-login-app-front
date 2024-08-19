@@ -1,0 +1,28 @@
+.user-profile-link {
+    text-decoration: none;
+    color: black;
+
+    &:hover {
+        color: crimson;
+    }
+}
+
+.profile-data {
+    width: 80%;
+    margin: auto;
+
+    .my-profile-title {
+        font-size: 25px;
+        margin: 25px 0;
+    }
+
+    .input-box {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        input {
+            width: 80%;
+        }
+    }
+}

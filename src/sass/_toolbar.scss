@@ -1,0 +1,116 @@
+.toolbar {
+    background-color: whitesmoke;
+    box-shadow: 0px -14px 20px 10px #666666;
+
+    a,
+    button {
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+        border: none;
+
+        &:hover {
+            color: rgb(91, 71, 165);
+        }
+    }
+
+    .profile {
+        background-color: whitesmoke;
+    }
+
+    .menu.active,
+    .menu.active::before {
+        background-color: whitesmoke;
+    }
+
+    .toolbar-btn-main {
+        background-color: transparent;
+        color: whitesmoke;
+        border: none;
+        text-transform: uppercase;
+        font-size: 14px;
+        transition: all 0.2s;
+
+        &:hover {
+            color: gold;
+        }
+    }
+
+    .action {
+        top: 20px;
+        right: 30px;
+
+        &:hover {
+            color: gold;
+        }
+    }
+
+    .action .profile {
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        margin-right: 15px;
+    }
+
+    .action .menu {
+        position: absolute;
+        top: 120px;
+        right: 20px;
+        padding: 0 10px;
+        background: #fff;
+        width: 180px;
+        box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        transition: visibility 0.5s, opacity 0.5s;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .action .menu.active {
+        top: 60px;
+        visibility: visible;
+        opacity: 1;
+        z-index: 100;
+    }
+
+    .action .menu::before {
+        content: "";
+        position: absolute;
+        top: -5px;
+        right: 28px;
+        width: 20px;
+        height: 20px;
+        background: #fff;
+        transform: rotate(45deg);
+    }
+
+    .action .menu ul {
+        padding: 0;
+    }
+
+    .action .menu ul li {
+        list-style: none;
+        padding: 15px 0;
+        border-top: 1px solid rgba(33, 28, 28, 0.181);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .action-btn {
+        background-color: transparent;
+        border: 1px solid rgba(37, 36, 36, 0.178);
+        padding: 2px 10px;
+        border-radius: 5px;
+        text-decoration: none;
+        color: black;
+        z-index: 5;
+        transition: all 0.2s;
+
+        &:hover {
+            cursor: pointer;
+            border-color: black;
+            background-color: whitesmoke;
+        }
+    }
+}

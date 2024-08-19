@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+#root {
+    min-height: 100vh
+}
+
+@import './toolbar';
+@import './login';
+@import './index';
+@import './posts';
+@import './profile';
+@import './createPost';
+@import './chat';
+
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid black;
+}
